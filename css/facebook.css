@@ -1,0 +1,142 @@
+:root {
+    --main-color: #1877f2;
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color: #f0f2f5; 
+    margin-top: 130px;
+    font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+}
+a {
+    text-decoration: none;
+}
+.page {
+    padding-inline: 40px;
+    margin: auto;
+    max-width: 1080px;
+    display: flex;
+    justify-content: space-between;
+}
+.page .text-area {
+    width: 500px;
+    margin-top: 50px;
+}
+.page .text-area img {
+    width: 301px;
+    margin-left: -28 ;
+}
+.page .text-area p {
+    font-size: 28px;
+}
+@media (max-width:1100px) {
+    .page .text-area p {
+        font-size: 24;
+    }
+    .page .text-area {
+        width: 400px;
+        padding-right: 32px;
+    }
+}
+.page .log-in-area .box {
+    width: 396px;
+    background-color: fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
+}
+@media (max-width:900px) {
+    .page {
+        display: block;
+        align-items: center;
+    }
+    .page .log-in-area .box {
+        margin: 40px auto;
+    }
+    .page .text-area {
+        text-align: center;
+        padding-right: 0;
+        margin: 20px auto 0px;
+    }
+    .page .text-area img {
+        margin: auto;
+    }
+    body {
+        margin-top: 0;
+    }
+}
+@media (max-width:490px) {
+    .page .log-in-area .box,
+    .page .text-area img,
+    .page .text-area {
+        width: 100%;
+    }
+}
+.page .log-in-area .box input {
+    width: 100%;
+    padding: 14 16;
+    font-size: 17px;
+    border: 1px solid #dddfe2;
+    border-radius: 6px;
+    margin-bottom: 15px;
+}
+.page .log-in-area .box input::placeholder {
+    color: #90949c;
+}
+.page .log-in-area .box input:focus {
+    outline: 1px solid var(--main-color);
+}
+.page .log-in-area .box input:last-of-type {
+    background-color: var(--main-color);
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.page .log-in-area .box .forgot-pass {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #dadde1;
+}
+.page .log-in-area .box .forgot-pass a {
+    color: var(--main-color);
+    font-size: 14px;
+    display: block;
+    width: fit-content;
+    margin: auto;
+}
+.page .log-in-area .box .forgot-pass a:hover,
+.page .log-in-area > p a:hover {
+    text-decoration: underline;
+}
+.page .log-in-area .box .footer {
+    padding:20px 0px 4px;
+}
+.page .log-in-area .box .footer a {
+    display: block;
+    color: white;
+    font-weight: bold;
+    background-color: #42b72a;
+    margin: auto;
+    padding: 14 16;
+    border-radius: 6px;
+    width: fit-content;
+    transition: 0.2s;
+}
+.page .log-in-area .box .footer a:hover {
+    background-color: #36a420;
+}
+.page .log-in-area > p {
+    font-size: 14px;
+    color: #1c1e21;
+    margin-top: 28px;
+    text-align: center;
+}
+.page .log-in-area > p a {
+    font-weight: 600;
+    color: #1c1e21;
+}
